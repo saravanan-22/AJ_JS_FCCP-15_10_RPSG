@@ -13,13 +13,9 @@ function getPlayerChoice(choice) {
 }
 
 function playGame() {
-
   let computerChoice = getComputerChoice();
-
   let result = getResult(playerChoice, computerChoice);
-
-  displayResult(playerChoice, computerChoice, result);
-
+  displayResult(playerChoice, computerChoice, result)
 }
 
 function getComputerChoice() {
@@ -32,7 +28,7 @@ function getComputerChoice() {
 }
 
 function getResult(player, computer) {
-  
+
   if (player === computer) {
     return "It's a tie!";
   } else if (
